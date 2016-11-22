@@ -1,0 +1,1 @@
+Assorted challenges from https://codefights.com/ with my own solutions in JavaScript. All of the solutions I will show here have pasts the tests on CodeFights. My intention is to do and commit at least one challenge daily.

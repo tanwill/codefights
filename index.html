@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<html>
+<body>
+//ARCADE//
+
+<br/><br/><strong>-----CHALLENGE 1-----</strong></br></br>
+
+You are given a two-digit integer n. Return the sum of its digits.</br>
+
+Example</br>
+
+For n = 29, the output should be addTwoDigits(n) = 11.</br></br>
+
+<strong>SOLUTION 1:</strong></br></br>
+function addTwoDigits(n) {</br>
+    var newn = n.toString();</br>
+    var first = newn[0];</br>
+    var second = newn[1];</br>
+    var firstNum = parseInt(first);</br>
+    var secondNum = parseInt(second);</br>
+    var sum = firstNum + secondNum;</br>
+    return sum;</br>
+}</br>
+
+<br/><strong>-----CHALLENGE 2-----</strong></br></br>
+
+Given an integer n, return the largest number that contains exactly n digits.</br>
+
+Example</br>
+
+For n = 2, the output should be largestNumber(n) = 99.</br></br>
+
+<strong>SOLUTION 2:</strong></br></br>
+function largestNumber(n) {</br>
+    var par = 9;</br>
+    for(i = 1; i < n; i++){</br>
+        par+='9';</br>
+    }</br>
+    par = parseInt(par);</br>
+     return par;</br>
+}</br>
+
+
+
+</body>
+</html>
+
+
+<!-- Tanise Williams, 2016 -->
