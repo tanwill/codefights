@@ -83,6 +83,35 @@ function seatsInTheater(nCols, nRows, col, row) {</br>
     var colsToLeft = (nCols - col) + 1;</br>
     return(colsToLeft * rowsBehind); </br>   
 }</br>
+<br/><strong>-----CHALLENGE 5-----</strong></br></br>
+Given a divisor and a bound, find the largest integer N such that:</br>
+
+N is divisible by divisor.</br>
+N is less than or equal to bound.</br>
+N is greater than 0.</br>
+It is guaranteed that such a number exists.</br>
+
+Example</br>
+
+For divisor = 3 and bound = 10, the output should be maxMultiple(divisor, bound) = 9.</br>
+
+The largest integer divisible by 3 and not larger than 10 is 9.</br></br>
+
+
+
+<strong>SOLUTION 5:</strong></br></br>
+function maxMultiple(divisor, bound) {</br>
+    var myArray = [];</br>
+    for(var i = divisor; i <= bound; i++){</br>
+        if(i <= bound && i % divisor == 0){</br>
+            myArray.push(i);</br>
+        }</br>
+    }</br>
+    var N = myArray[myArray.length - 1];</br>
+    return N;</br>
+}</br>
+
+
 </body>
 </html>
 
