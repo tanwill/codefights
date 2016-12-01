@@ -162,13 +162,38 @@ lateRide(n) = 14.
 
 SOLUTION 7:
 
-This challenge in particular is a bit harder than the rest. This commit doesn't have the solution, but I'm working on it!
+This one was pretty fun!
 
 */
 function lateRide(n) {
-    var sum =  n/60;
-    return sum;
-}
+    var hours = n / 60.00;
+    var minutes = n % 60;
+
+    var hoursStringify = hours.toString();
+    var minutesStringify = minutes.toString();
+
+    var firstChar = parseInt(hoursStringify[0]);
+    var secondChar = parseInt(hoursStringify[1]);       
+    var thirdChar = parseInt(minutesStringify[0]);      
+    var fourthChar = parseInt(minutesStringify[1]);
+
+    if(parseInt(hoursStringify) === 0){
+        if(n.toString().length === 2){
+            return thirdChar + fourthChar;} else {
+
+                return thirdChar;
+            }
+        }
+        else if(hoursStringify.length >= 2 ){
+            return firstChar + secondChar + thirdChar + fourthChar;
+        } 
+        else if ( hoursStringify.length === 1){
+            if(minutesStringify.length === 2){return firstChar + thirdChar + fourthChar;} 
+            else if (minutesStringify.length === 1){return firstChar + thirdChar;}
+        } 
+        else {return thirdChar + fourthChar;}
+
+    }
 
 
 // Tanise Williams, 2016 
