@@ -1,5 +1,5 @@
 
-//ARCADE//
+//ARCADE - INTRO GATES//
 
 /*
 -----CHALLENGE 1-----
