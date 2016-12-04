@@ -233,7 +233,7 @@ for (var i = 2; i <= 10; i++) {
 }
 return 10 + Math.floor((s - min1 - min2_10 * 9) / min11);
 }
-
+ 
 
 
 // Tanise Williams, 2016 
