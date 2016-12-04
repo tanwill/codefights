@@ -46,9 +46,7 @@ You're strong enough to take both of the items with you.
 
 SOLUTION 2:
 
-This is currently failing 2 out of 7 tests, but I can't figure out why. I suspect a bug on CodeFights end, but we will see. 
-
-I submitted an issue here: https://github.com/Code-Fights/codefights-wiki/issues/111
+Now solved, but I initially submitted an issue here: https://github.com/Code-Fights/codefights-wiki/issues/111
 */
 
 
@@ -62,9 +60,9 @@ function knapsackLight(value1, weight1, value2, weight2, maxW) {
 
 	if(maxW < weightBoth){
 		if(maxW >= weight1 && maxW >= weight2) {
-			if(weight1 > weight2){
+			if(value1 > value2){
 				return value1;
-			} else if (weight2 > weight1){
+			} else if (value2 > value1){
 				return value2;
 			} else {
 				return value1;
