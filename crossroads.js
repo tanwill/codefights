@@ -131,14 +131,14 @@ Still working on this one.
 
 */
 function isInfiniteProcess(a, b) {
-    if(a !== b){
-        a++;
-        b--;   
-        
-        if(a == b){
-            return true;
-        } else { return false}
-    }
+	if(0<=a && a<=20 && 0<=b && b<=20){
+		if(b>=a && (b-a)%2==0) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
 }
 
 
