@@ -217,32 +217,22 @@ function tennisSet(score1, score2) {
     if(score1 == score2 ){
         return false;
     } 
-    
-    if(score1 && score2 >= 6){
-        return true;
-    } 
-    
-    if(score1 >= 6 && score2 < 5) {
-        return true;
-    } 
-    
-    if(score2 >= 6 && score1 < 5){
-        return true;
-    } 
-    
-    if(score1 > 4){
-        if (score2 > 6){
-             return true;
+    if(score1 >= 6 ){
+        if(score2 < 5){
+            return true;
+        } else if (score2 >= 5){
+            return false;
+        }
+    }    
+    if(score2 >= 6 ){
+        if(score1 < 5){
+            return true;
+        } else if (score1 >= 5){
+            return false;
         }
     }
-    
-    if(score2 > 4){
-        if (score1 > 6){
-             return true;
-        }
-    }
-    
 }
+
 
 /*
 // Tanise Williams, 2016 
