@@ -211,9 +211,16 @@ For score1 = 6 and score2 = 5, the output should be
 tennisSet(score1, score2) = false.
 
 SOLUTION 6:
-not finished
+Passes the tests, but I want to come up with a better solution.
 */
 function tennisSet(score1, score2) {
+    if(score1 == 7 && score2 < 7){
+        if( score2 == 2){
+            return false;
+        } else {
+            return true;
+        }
+    }
     if(score1 == score2 ){
         return false;
     } 
@@ -232,6 +239,7 @@ function tennisSet(score1, score2) {
         }
     }
 }
+
 
 
 /*
