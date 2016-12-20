@@ -15,7 +15,11 @@ SOLUTION 1:
 */
 
 function createArray(size) {
-
+    myArray = [];
+    for(i = 0; i < size; i++){
+        myArray.push(1);
+    }
+    return myArray;
 }
 
 /*
