@@ -18,7 +18,12 @@ leastFactorial(n) = 24.
 17 < 24 = 4! = 1 * 2 * 3 * 4, while 3! = 1 * 2 * 3 = 6 < 17).
 
 SOLUTION 1:
+starting soon
 */
+
+function leastFactorial(n) {
+
+}
 
 /*
 
